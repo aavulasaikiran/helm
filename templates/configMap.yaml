@@ -1,6 +1,6 @@
-apiversion: v1
-kind: configMap
-Metadata:
-   name: demo-data
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-data
 data:
-   port_number: 1234
+  port_number: "1234"
