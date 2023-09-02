@@ -33,9 +33,9 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          volumeMounts: 
-            -name: db-info
-             mountpath: /opt
+          volumeMounts:
+            - name: db-info
+              mountPath: /opt 
           ports:
             - name: http
               containerPort: 80
@@ -63,6 +63,6 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       volumes:
-        -name: db-info
-         configMap:
-          name: demo-data
+        - name: db-info
+          configMap:
+            name: demo-data
