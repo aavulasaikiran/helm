@@ -5,7 +5,7 @@
 replicaCount: 5
 
 image:
-  repository: saikirandevops/sbapp:latest
+  repository: saikirandevops/demo1:latest
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
